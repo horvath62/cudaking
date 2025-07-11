@@ -1,10 +1,13 @@
-print ("Cuda King")
 
 import numba
 from numba import cuda
-import numpy as np
 
 import torch
+
+
+print("Cuda King")
+
+'''
 
 if torch.cuda.is_available():
     device = torch.device("cuda")
@@ -77,4 +80,3 @@ result_device.copy_to_host(result)
 
 print(result[:10])  # Print first 10 results
 
-'''
